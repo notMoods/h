@@ -15,7 +15,4 @@ namespace Structures
             right = r;
         }
     }
-
-
-    
 }
