@@ -1,0 +1,15 @@
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\bin\Debug\net7.0\h.exe
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\bin\Debug\net7.0\h.deps.json
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\bin\Debug\net7.0\h.runtimeconfig.json
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\bin\Debug\net7.0\h.dll
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\bin\Debug\net7.0\h.pdb
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.csproj.AssemblyReference.cache
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.AssemblyInfoInputs.cache
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.AssemblyInfo.cs
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.csproj.CoreCompileInputs.cache
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.dll
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\refint\h.dll
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.pdb
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\h.genruntimeconfig.cache
+C:\Users\HP PAVILION 14\Documents\Docs\Coding_Stuff\h\obj\Debug\net7.0\ref\h.dll
