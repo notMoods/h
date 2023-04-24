@@ -67,14 +67,72 @@ namespace styla{
                 
                 foo.left = new Node(start++);
                 hoo.Enqueue(foo.left);
-                if(start >= h) break;
+                if(start > h) break;
 
                 foo.right = new Node(start++);
                 hoo.Enqueue(foo.right);
-                if(start >= h) break;
+                if(start > h) break;
             }
 
             return head;
+        }
+
+        public static List<int> TreeTraversal(Node head)
+        {
+            int input;
+            do{
+                Console.WriteLine("Pick a traversal: " + 
+                "\n1 for PreOrder, 2 for InOrder, 3 for PostOrder");
+            }while(!int.TryParse(Console.ReadLine(), out input) || input < 1 || input > 3);
+
+
+            var res = new List<int>();
+            switch(input)
+            {
+                case 1:
+                  res = PreOrder(head, new List<int>());
+                  break;
+                case 2:
+                  res = InOrder(head, new List<int>());
+                  break;
+                case 3:
+                  res = PostOrder(head, new List<int>());
+                  break;    
+            }
+            return res;
+        }
+
+        private static List<int> PostOrder(Node? head, List<int> list)
+        {
+            if(head == null) return list;
+
+            PreOrder(head.left, list);
+            PreOrder(head.right, list);
+            list.Add(head.value);
+
+            return list;
+        }
+
+        private static List<int> InOrder(Node? head, List<int> list)
+        {
+            if(head == null) return list;
+
+            PreOrder(head.left, list);
+            list.Add(head.value);
+            PreOrder(head.right, list);
+
+            return list;
+        }
+
+        private static List<int> PreOrder(Node? head, List<int> list)
+        {
+            if(head == null) return list;
+
+            list.Add(head.value);
+            PreOrder(head.left, list);
+            PreOrder(head.right, list);
+
+            return list;
         }
     }
 }
