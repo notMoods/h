@@ -106,8 +106,8 @@ namespace styla{
         {
             if(head == null) return list;
 
-            PreOrder(head.left, list);
-            PreOrder(head.right, list);
+            PostOrder(head.left, list);
+            PostOrder(head.right, list);
             list.Add(head.value);
 
             return list;
@@ -117,9 +117,9 @@ namespace styla{
         {
             if(head == null) return list;
 
-            PreOrder(head.left, list);
+            InOrder(head.left, list);
             list.Add(head.value);
-            PreOrder(head.right, list);
+            InOrder(head.right, list);
 
             return list;
         }

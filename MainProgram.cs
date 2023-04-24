@@ -44,25 +44,17 @@ namespace styla
             {6, 12, 18, 24, 30}
             */
 
+
             Node head = NodeGenerator(7);
 
-            Console.WriteLine(ToText(TreeTraversal(head)));
+            while(true)
+            {
+                Console.WriteLine(ToText(TreeTraversal(head)));
 
-            
+                Console.WriteLine("Press X to exit");
 
-
-
-
-
-
-
-
-
-
-
-
+                if(Console.ReadLine() == "X") break;
+            }
         }
-    }
-        
-    
+    }  
 }
