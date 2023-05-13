@@ -2,6 +2,7 @@
 using System.Text;
 using Structures;
 using Roo;
+using eventName;
 
 namespace styla
 {
@@ -54,6 +55,16 @@ namespace styla
                 Console.WriteLine("Press X to exit");
 
                 if(Console.ReadLine() == "X") break;
+            }
+
+            Counter c = new Counter(new Random().Next(10));
+            c.ThresholdReached += hhh.c_ThresholdReached;
+
+            Console.WriteLine("press 'a' key to increase total");
+            while (Console.ReadKey(true).KeyChar == 'a')
+            {
+                Console.WriteLine("adding one");
+                c.Add(1);
             }
         }
     }  
