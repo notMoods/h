@@ -57,6 +57,9 @@ namespace styla
                 if(Console.ReadLine() == "X") break;
             }
 
+            // bunch of node generation
+            // bullshit
+
             Counter c = new Counter(new Random().Next(10));
             c.ThresholdReached += hhh.c_ThresholdReached;
 
