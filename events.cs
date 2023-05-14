@@ -4,7 +4,7 @@ namespace eventName
 {
     class hhh
     {
-        public static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
+        public static void c_ThresholdReached(object? sender, ThresholdReachedEventArgs e)
         {
             Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold,  e.TimeReached);
             Environment.Exit(0);
@@ -35,14 +35,14 @@ namespace eventName
 
         protected virtual void OnThresholdReached(ThresholdReachedEventArgs e)
         {
-            EventHandler<ThresholdReachedEventArgs> handler = ThresholdReached;
+            EventHandler<ThresholdReachedEventArgs>? handler = ThresholdReached;
             if (handler != null)
             {
                 handler(this, e);
             }
         }
 
-        public event EventHandler<ThresholdReachedEventArgs> ThresholdReached;
+        public event EventHandler<ThresholdReachedEventArgs>? ThresholdReached;
     }
 
     public class ThresholdReachedEventArgs : EventArgs
