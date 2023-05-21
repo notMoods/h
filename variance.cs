@@ -12,7 +12,11 @@ namespace Variance
         public void JustTesting()
         {
             Action<object> hoo = (h) => {string r = h.GetType().Name + "k";};
-            Action<string> gii = hoo; //Contravariance
+            Action<string> gii = hoo; //Contravariance in delegates with type parameter
+
+            Func<int, string> hoot = (h) => "";
+            Func<int, object> hoot2 = hoot; //Covariance in delegates with return type
+
 
             
         }
