@@ -19,9 +19,11 @@ class SampleControl : Component
     static readonly object mouseUpEventKey = new object();
 
  
-    public delegate void MouseEventHandler(object? o, MouseEventArgs e);
+    // public delegate void MouseEventHandler(object? o, MouseEventArgs e);
+
+    //public EventHandler<MouseEventArgs>? hoo;
    
-    public event MouseEventHandler MouseDown
+    public event EventHandler<MouseEventArgs> MouseDown
     {
         add
         {
@@ -34,7 +36,7 @@ class SampleControl : Component
     }
 
  
-    public event MouseEventHandler MouseUp
+    public event EventHandler<MouseEventArgs> MouseUp
     {
         add
         {
@@ -49,14 +51,14 @@ class SampleControl : Component
  
     private void OnMouseDown(MouseEventArgs e)
     {
-        MouseEventHandler? mouseEventDelegate = (MouseEventHandler?)listEventDelegates[mouseDownEventKey];
+        EventHandler<MouseEventArgs>? mouseEventDelegate = (EventHandler<MouseEventArgs>?)listEventDelegates[mouseDownEventKey];
         mouseEventDelegate?.Invoke(this, e);
     }
 
  
     private void OnMouseUp(MouseEventArgs e)
     {
-        MouseEventHandler? mouseEventDelegate = (MouseEventHandler?)listEventDelegates[mouseUpEventKey];
+        EventHandler<MouseEventArgs>? mouseEventDelegate = (EventHandler<MouseEventArgs>?)listEventDelegates[mouseUpEventKey];
         mouseEventDelegate?.Invoke(this, e);
     }
 }
