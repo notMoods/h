@@ -13,15 +13,8 @@ namespace Variance
             Action<string> gii = hoo;                      //Contravariance in delegates with type parameter
 
             Func<int, string> hoot = (h) => "";
-            Func<int, object> hoot2 = hoot;               //Covariance in delegates with return type
-
-
-            
+            Func<int, object> hoot2 = hoot;               //Covariance in delegates with return type           
         }
-        
-        
- 
-        
 
     }
 }
